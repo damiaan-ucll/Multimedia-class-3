@@ -24,7 +24,7 @@ public:
 	void resize(unsigned length);
 	
 	int get(unsigned index) {return index<length ? data[index] : 0;}
-	int getLength() {return length;}
+	const int getLength() {return length;}
 		
 	void set(unsigned index, int value);
 	void insertBefore(unsigned index, int value);
